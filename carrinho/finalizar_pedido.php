@@ -152,7 +152,7 @@ $result_enderecos = mysqli_query($conexao, $query_enderecos);
             <h3>Resumo do Carrinho</h3>
             <?php include("../carrinho/carrinho.php"); ?>
 
-            <h3>Escolha a Forma de Recebimento</h3>
+            <h3>Entrega</h3>
             <form method="POST" action="finalizar_pedido.php">
                 <div class="tipo-entrega-options">
                     <label class="tipo-entrega-option">
@@ -167,7 +167,7 @@ $result_enderecos = mysqli_query($conexao, $query_enderecos);
                         <input type="radio" name="tipo_entrega" value="entrega" onclick="toggleEndereco(true)">
                         <div>
                             <strong>Entrega</strong>
-                            <p>Entregamos no endereço cadastrado</p>
+                            <p>Entregamos a partir do endereço cadastrado</p>
                         </div>
                     </label>
                 </div>
