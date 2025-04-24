@@ -37,7 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,24 +53,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             margin: 0 auto;
             padding: 20px;
         }
-
         .form-group {
             margin-bottom: 15px;
         }
-
         .form-group label {
             display: block;
             margin-bottom: 5px;
         }
-
-        .form-group select,
-        .form-group input {
+        .form-group select, .form-group input {
             width: 100%;
             padding: 8px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-
         .btn-finalizar {
             background-color: #28a745;
             color: white;
@@ -80,27 +74,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             border-radius: 5px;
             cursor: pointer;
         }
-
         .btn-finalizar:hover {
             background-color: #218838;
         }
-
         .endereco-group {
             display: none;
         }
-
         .erro {
             color: red;
             margin-bottom: 15px;
         }
     </style>
 </head>
-
 <body>
     <?php include("../php/navbar.php"); ?>
 
     <section class="py-5">
         <div class="container-finalizar">
+            <h2>Finalizar Pedido</h2>
             <?php if (isset($erro)): ?>
                 <p class="erro"><?= htmlspecialchars($erro) ?></p>
             <?php endif; ?>
@@ -142,5 +133,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/scripts.js"></script>
 </body>
-
 </html>
